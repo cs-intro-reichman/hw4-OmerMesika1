@@ -60,7 +60,6 @@ public class TesterArrayCharOps {
         boolean test3 = ArrCharOps.indexOf(arr1, 'w', 12) == -1;
         boolean test4 = ArrCharOps.indexOf(arr1, 'G') == -1;
         boolean test5 = ArrCharOps.indexOf(empty_arr, 'w') == -1;
-
         boolean test6 = ArrCharOps.lastIndexOf(arr1, 'r') == 20;
         boolean test7 = ArrCharOps.lastIndexOf(arr1, 'B') == -1;
 
