@@ -14,11 +14,14 @@ public class Primes {
         }
         for(int i=2;i<Math.sqrt(primes.length);i++) {
            for(int j=i;j<primes.length;j++) {
-            if (j%i==0 && j!=i) {
+            if (j%i==0
+            
+            && j!=i) {
                 primes[j] = false;
             }
            }
         }
+        System.out.println("Prime Numbers up to " + limit + ":");
         for(int x=0;x<primes.length;x++) {
             if (primes[x]) {
                 counter++;
