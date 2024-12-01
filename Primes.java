@@ -21,7 +21,7 @@ public class Primes {
             }
            }
         }
-        System.out.println("Prime Numbers up to " + limit + ":");
+        System.out.println("Prime numbers up to " + limit + ":");
         for(int x=0;x<primes.length;x++) {
             if (primes[x]) {
                 counter++;
