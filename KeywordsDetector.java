@@ -11,10 +11,10 @@ public class KeywordsDetector {
             "The team showed great Synergy in the last project",
             "Use simple words without hype and fluff",
             "Our new technology presents a significant paradigm shift",
-            "Effective presentations must be clear, concise, and humble"
+            "Effective presentations must be clear, concise, and humble" //l=11
         };
         // Some keywords that typically signal bullshit contents in business presentations 
-        String[] keywords = {"synergy", "disrupt", "leverage", "Paradigm", "transform"};
+        String[] keywords = {"synergy", "disrupt", "leverage", "Paradigm", "transform"}; //l=5
         detectAndPrint(sentences, keywords);
     }
 
@@ -22,5 +22,12 @@ public class KeywordsDetector {
     // If a sentence contains one or more of the kewords, prints it.
     public static void detectAndPrint(String[] sentences, String[] keywords) {
         // Replace this comment with your code
+        for(int i=0;i<sentences.length;i++) {
+        for(int j=0;j<keywords.length;j++) {
+            if (MyString.contains(MyString.lowerCase(sentences[i]), MyString.lowerCase(keywords[j]))) {
+                System.out.println(keywords[j]);
+            }
+        }
+        }
     }
 }

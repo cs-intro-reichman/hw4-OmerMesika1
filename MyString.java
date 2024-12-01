@@ -1,10 +1,10 @@
 public class MyString {
     public static void main(String[] args) {
-        // System.out.println("Testing lowercase:");
-        // System.out.println("UnHappy : " + lowerCase("UnHappy"));
-        // System.out.println("This costs 15 Sheksls : " + lowerCase("This costs 15 Sheksls"));
-        // System.out.println("TLV : " + lowerCase("TLV"));
-        // System.out.println("lowercase : " + lowerCase("lowercase"));
+        System.out.println("Testing lowercase:");
+        System.out.println("UnHappy : " + lowerCase("UnHappy"));
+        System.out.println("This costs 15 Sheksls : " + lowerCase("This costs 15 Sheksls"));
+        System.out.println("TLV : " + lowerCase("TLV"));
+        System.out.println("lowercase : " + lowerCase("lowercase"));
 
         System.out.println("Testing contains:");
         System.out.println(contains("unhappy", "happy")); // true
@@ -38,7 +38,8 @@ public class MyString {
         int length1= str1.length();
         int length2=str2.length();
         int counter = 0;
-        if((length1==0 && length2!=0) || (length1!=0 && length2==0)) return false;
+        if((length1!=0 && length2==0)) return true;
+        if((length1==0 && length2!=0)) return false;
         for(int i=0;i<length1;i++) {
             if (counter == length2) break;
             if (str1.charAt(i)==str2.charAt(0)) {
